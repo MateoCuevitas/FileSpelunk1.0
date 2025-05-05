@@ -1,5 +1,9 @@
 
 # FileSpelunk1.0
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Platform: Cross-platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-brightgreen)
+
+A fast, recursive string search tool for forensic investigations and data recovery. Works on Windows and Linux.
 
 **FileSpelunk1.0** is a Linux-native forensic string-search tool designed to recursively scan directories for files that contain **multiple specific text strings** — even if they are scattered throughout the file. It mimics a complex Windows `.bat` file using Bash + `strings` + `grep`. The windows version is included in the repo. Check the "windows" directory for usage. Thanks! If you haven't recovered your files yet, then go to https://www.cgsecurity.org/wiki/TestDisk_Download and get the most recent version of PhotoREC so you can recover your files that have been deleted. Follow all directions provided in the documentation.
 
