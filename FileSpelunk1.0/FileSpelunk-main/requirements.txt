@@ -1,0 +1,4 @@
+strings
+grep
+find
+stat
