@@ -4,6 +4,9 @@
 
 # === LOAD CONFIG FROM YAML ===
 CONFIG_FILE="./src/config.yml"
+# Optional CLI override: ./FileSpelunk1.0.sh [search_path] [output_file]
+if [ -n "$1" ]; then SEARCH_PATH="$1"; fi
+if [ -n "$2" ]; then OUTPUT_FILE="$2"; fi
 SEARCH_PATH=$(grep 'search_path:' "$CONFIG_FILE" | cut -d':' -f2- | xargs)
 OUTPUT_FILE=$(grep 'output_file:' "$CONFIG_FILE" | cut -d':' -f2- | xargs)
 IFS=$'\n' read -d '' -r -a STRINGS < <(grep '^  -' "$CONFIG_FILE" | sed 's/^- //' && printf '\0')
