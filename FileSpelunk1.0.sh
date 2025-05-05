@@ -9,6 +9,11 @@ OUTPUT_FILE=$(grep 'output_file:' "$CONFIG_FILE" | cut -d':' -f2- | xargs)
 IFS=$'\n' read -d '' -r -a STRINGS < <(grep '^  -' "$CONFIG_FILE" | sed 's/^- //' && printf '\0')
 
 # === FUNCTION ===
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Error: config.yml not found at $CONFIG_FILE"
+    exit 1
+fi
+
 search_files() {
     echo "Filename,Last Modified,Extension,Matched Lines" > "$OUTPUT_FILE"
     local file_count=0
