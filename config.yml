@@ -1,0 +1,8 @@
+
+search_path: /path/to/directory/to/search
+output_file: ./matched_files.csv
+strings:
+  - "STRING 1"
+  - "STRING 2"
+  - "STRING 3"
+  - "STRING 4"
