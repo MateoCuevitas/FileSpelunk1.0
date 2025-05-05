@@ -56,3 +56,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## ✅ Support
 
 If you liked FileSpelunk and it helped you find that missing something, then please consider supporting the repo <3
+https://buymeacoffee.com/mateocuevitas
