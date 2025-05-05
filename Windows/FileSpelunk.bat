@@ -17,10 +17,10 @@ if not exist "%outputDir%" mkdir "%outputDir%"
 :: === SEARCH JOBS ===
 CALL :RunSearch "All_Strings"      "String 1 String 2 String 3 String 4"     "Matches_All_Strings.csv"
 
-CALL :RunSearch "Only_String1"     "String 1"         "Only_String1.csv"
-CALL :RunSearch "Only_String2"        "String 2"            "Only_String2.csv"
-CALL :RunSearch "Only_String3"  "String 3"      "Only_String3.csv"
-CALL :RunSearch "Only_String4"     "String 4" "Only_String4.csv"
+CALL :RunSearch "Only_String1"     "String 1"                                "Only_String1.csv"
+CALL :RunSearch "Only_String2"     "String 2"                                "Only_String2.csv"
+CALL :RunSearch "Only_String3"     "String 3"                                "Only_String3.csv"
+CALL :RunSearch "Only_String4"     "String 4"                                "Only_String4.csv"
 
 goto :EOF
 
